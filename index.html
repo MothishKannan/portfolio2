@@ -3,171 +3,561 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mothish Kannan - Frontend Developer & Embedded Systems Enthusiast">
     <title>Mothish Kannan | Portfolio</title>
-
-    <!-- Bootstrap -->
+    
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="#">Mothish<span class="text-primary">.Kannan</span></a>
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navMenu">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<!-- Hero -->
-<section id="home" class="hero-section min-vh-100 d-flex align-items-center">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <p class="text-secondary">👋 Hello, I'm</p>
-                <h1 class="display-3 fw-bold">Mothish Kannan</h1>
-                <h3 class="text-primary">Frontend Developer & Embedded Systems Enthusiast</h3>
-                <p class="lead text-secondary mt-3">
-                    Passionate about building responsive websites and working on IoT & embedded projects.
-                </p>
-                <a href="#projects" class="btn btn-primary btn-lg mt-3">View Projects</a>
-            </div>
-
-            <div class="col-lg-6 text-center">
-                <img src="im.png" class="profile-img rounded-circle" alt="Mothish">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">Mothish<span class="text-primary">.Kannan</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
             </div>
         </div>
-    </div>
-</section>
+    </nav>
 
-<!-- About -->
-<section id="about" class="py-5">
-    <div class="container">
-        <h2 class="text-center fw-bold">About Me</h2>
-        <div class="title-line mx-auto"></div>
-
-        <div class="row g-4 mt-4">
-            <div class="col-md-4">
-                <div class="about-card p-4 text-center">
-                    <div class="icon-box mx-auto mb-3"><i class="fas fa-graduation-cap"></i></div>
-                    <h5>Education</h5>
-                    <p class="text-secondary">ECE student with strong fundamentals.</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section min-vh-100 d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Content -->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <p class="text-secondary mb-2 fs-5">👋 Hello, I'm</p>
+                    <h1 class="display-3 fw-bold mb-3">Mothish Kannan</h1>
+                    <h2 class="text-primary h3 mb-3">Frontend Developer & IoT Enthusiast</h2>
+                    <p class="lead text-secondary mb-4">Passionate about creating beautiful, responsive websites and exploring the fascinating world of embedded systems and IoT innovations.</p>
+                    
+                    <div class="d-flex gap-3 mb-4">
+                        <a href="#projects" class="btn btn-primary btn-lg">
+                            <i class="fas fa-code me-2"></i>View My Work
+                        </a>
+                        <a href="#contact" class="btn btn-outline-primary btn-lg">
+                            <i class="fas fa-envelope me-2"></i>Get In Touch
+                        </a>
+                    </div>
+                    
+                    <div class="social-links d-flex gap-3">
+                        <a href="https://github.com/mothishkannan" target="_blank" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/mothish-kannan" target="_blank" class="social-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:mothishdeva@gmail.com" class="social-icon">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://twitter.com/mothishkannan" target="_blank" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
                 </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="about-card p-4 text-center">
-                    <div class="icon-box mx-auto mb-3"><i class="fas fa-laptop-code"></i></div>
-                    <h5>Frontend Development</h5>
-                    <p class="text-secondary">HTML, CSS, Bootstrap, JavaScript.</p>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="about-card p-4 text-center">
-                    <div class="icon-box mx-auto mb-3"><i class="fas fa-microchip"></i></div>
-                    <h5>Embedded Systems</h5>
-                    <p class="text-secondary">Arduino, ESP32, IoT projects.</p>
+                
+                <!-- Right Image -->
+                <div class="col-lg-6 text-center">
+                    <div class="profile-image-wrapper">
+                        <img src="im.png" alt="Mothish Kannan" class="img-fluid rounded-circle profile-img">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Skills -->
-<section id="skills" class="py-5">
-    <div class="container">
-        <h2 class="text-center fw-bold">Skills</h2>
-        <div class="title-line mx-auto"></div>
-
-        <h4>Frontend Technologies</h4>
-        <div class="row g-4">
-            <div class="col-md-3"><div class="skill-box html-color">HTML</div></div>
-            <div class="col-md-3"><div class="skill-box css-color">CSS</div></div>
-            <div class="col-md-3"><div class="skill-box js-color">JavaScript</div></div>
-            <div class="col-md-3"><div class="skill-box bootstrap-color">Bootstrap</div></div>
-        </div>
-
-        <h4>Backend Technologies</h4>
-        <div class="row g-4">
-            <div class="col-md-3"><div class="skill-box java-color">Java</div></div>
-        </div>
-
-        <h4>Tools</h4>
-        <div class="row g-4">
-            <div class="col-md-3"><div class="skill-box git-color">Git & GitHub</div></div>
-        </div>
-
-        <h4>Embedded Systems</h4>
-        <div class="row g-4">
-            <div class="col-md-3"><div class="skill-box arduino-color">Arduino</div></div>
-            <div class="col-md-3"><div class="skill-box iot-color">IoT</div></div>
-        </div>
-    </div>
-</section>
-
-<!-- Projects -->
-<section id="projects" class="py-5">
-    <div class="container">
-        <h2 class="text-center fw-bold">Projects</h2>
-        <div class="title-line mx-auto"></div>
-
-        <div class="row g-4 mt-4">
-            <div class="col-md-4">
-                <div class="project-card p-4 text-center">
-                    <i class="fas fa-globe fa-3x mb-3"></i>
-                    <h5>Creative Website</h5>
-                    <p class="text-secondary">Modern frontend website</p>
-                    <span class="badge">HTML</span>
-                    <span class="badge">CSS</span>
-                    <span class="badge">Bootstrap</span>
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">About Me</h2>
+                <div class="title-line mx-auto"></div>
+                <p class="text-secondary">Get to know me better</p>
+            </div>
+            
+            <div class="row g-4 mb-5">
+                <div class="col-md-4">
+                    <div class="card h-100 about-card">
+                        <div class="card-body text-center">
+                            <div class="icon-box mx-auto mb-3">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h5 class="card-title">Education</h5>
+                            <p class="card-text text-secondary">Electronics & Communication Engineering student with a passion for both software and hardware.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 about-card">
+                        <div class="card-body text-center">
+                            <div class="icon-box mx-auto mb-3">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h5 class="card-title">Frontend Development</h5>
+                            <p class="card-text text-secondary">Specialized in creating responsive, user-friendly websites using modern web technologies.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 about-card">
+                        <div class="card-body text-center">
+                            <div class="icon-box mx-auto mb-3">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <h5 class="card-title">Embedded Systems</h5>
+                            <p class="card-text text-secondary">Enthusiastic about IoT, microcontrollers, and bridging the gap between hardware and software.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="col-md-4">
-                <div class="project-card p-4 text-center">
-                    <i class="fas fa-tractor fa-3x mb-3"></i>
-                    <h5>Agricultural Rover</h5>
-                    <p class="text-secondary">Autonomous IoT rover</p>
-                    <span class="badge">Arduino</span>
-                    <span class="badge">ESP32</span>
-                    <span class="badge">IoT</span>
+            
+            <div class="row">
+                <div class="col-lg-10 mx-auto text-center">
+                    <p class="lead text-secondary mb-3">I'm a passionate developer who loves bringing ideas to life through code. With a strong foundation in frontend technologies and hands-on experience in embedded systems, I create innovative solutions that blend digital experiences with physical computing.</p>
+                    <p class="lead text-secondary">Having completed professional training at <strong>Stoz Academy</strong> and built multiple web applications and IoT projects, I'm constantly learning and pushing my boundaries to master new technologies.</p>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Contact -->
-<section id="contact" class="py-5">
-    <div class="container text-center">
-        <h2 class="fw-bold">Contact</h2>
-        <div class="title-line mx-auto"></div>
-        <p>Email: mothishdeva@gmail.com</p>
-        <p>Phone: 9566704795</p>
-    </div>
-</section>
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-dark">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">My Skills</h2>
+                <div class="title-line mx-auto"></div>
+                <p class="text-secondary">Technologies I work with</p>
+            </div>
 
-<footer class="text-center py-3">
-    © 2025 Mothish Kannan
-</footer>
+            <!-- Skills Grid with Different Style -->
+            <div class="row g-4 mb-5">
+                <!-- HTML -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-box">
+                        <div class="skill-icon-circle html-color">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h5 class="mt-3 mb-2">HTML5</h5>
+                        <p class="text-secondary small mb-3">Semantic & Accessible</p>
+                        <div class="skill-percentage">90%</div>
+                    </div>
+                </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+                <!-- CSS -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-box">
+                        <div class="skill-icon-circle css-color">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <h5 class="mt-3 mb-2">CSS3</h5>
+                        <p class="text-secondary small mb-3">Modern Styling</p>
+                        <div class="skill-percentage">85%</div>
+                    </div>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-box">
+                        <div class="skill-icon-circle js-color">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <h5 class="mt-3 mb-2">JavaScript</h5>
+                        <p class="text-secondary small mb-3">Interactive Web Apps</p>
+                        <div class="skill-percentage">75%</div>
+                    </div>
+                </div>
+
+                <!-- Bootstrap -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-box">
+                        <div class="skill-icon-circle bootstrap-color">
+                            <i class="fab fa-bootstrap"></i>
+                        </div>
+                        <h5 class="mt-3 mb-2">Bootstrap</h5>
+                        <p class="text-secondary small mb-3">Responsive Design</p>
+                        <div class="skill-percentage">80%</div>
+                    </div>
+                </div>
+
+                <!-- Java -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-box">
+                        <div class="skill-icon-circle java-color">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <h5 class="mt-3 mb-2">Java</h5>
+                        <p class="text-secondary small mb-3">OOP Programming</p>
+                        <div class="skill-percentage">70%</div>
+                    </div>
+                </div>
+
+                <!-- Git -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-box">
+                        <div class="skill-icon-circle git-color">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                        <h5 class="mt-3 mb-2">Git</h5>
+                        <p class="text-secondary small mb-3">Version Control</p>
+                        <div class="skill-percentage">75%</div>
+                    </div>
+                </div>
+
+                <!-- Arduino -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-box">
+                        <div class="skill-icon-circle arduino-color">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h5 class="mt-3 mb-2">Arduino</h5>
+                        <p class="text-secondary small mb-3">Hardware Programming</p>
+                        <div class="skill-percentage">80%</div>
+                    </div>
+                </div>
+
+                <!-- IoT -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-box">
+                        <div class="skill-icon-circle iot-color">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <h5 class="mt-3 mb-2">IoT</h5>
+                        <p class="text-secondary small mb-3">Connected Devices</p>
+                        <div class="skill-percentage">75%</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certification -->
+          
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">My Projects</h2>
+                <div class="title-line mx-auto"></div>
+                <p class="text-secondary">Showcasing my work and creativity</p>
+            </div>
+
+            <!-- Frontend Development Projects -->
+            <div class="mb-5">
+                <h3 class="mb-4"><i class="fas fa-laptop-code text-primary me-2"></i>Frontend Web Development</h3>
+                <div class="card project-card">
+                    <div class="card-body">
+                        <div class="row g-4">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="mini-project">
+                                    <div class="mini-project-img">
+                                        <i class="fas fa-globe"></i>
+                                    </div>
+                                    <h6 class="mt-3">Creative Website</h6>
+                                    <p class="text-secondary small">Modern web design</p>
+                                    <div class="d-flex gap-2 justify-content-center">
+                                        <a href="https://incredible-biscuit-891f98.netlify.app/" target="_blank" class="btn btn-sm btn-primary">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="mini-project">
+                                    <div class="mini-project-img">
+                                        <i class="fas fa-palette"></i>
+                                    </div>
+                                    <h6 class="mt-3">Portfolio Site</h6>
+                                    <p class="text-secondary small">Responsive design</p>
+                                    <div class="d-flex gap-2 justify-content-center">
+                                        <a href="https://gleaming-cannoli-24babf.netlify.app/" target="_blank" class="btn btn-sm btn-primary">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="mini-project">
+                                    <div class="mini-project-img">
+                                        <i class="fas fa-rocket"></i>
+                                    </div>
+                                    <h6 class="mt-3">Pilot Surya</h6>
+                                    <p class="text-secondary small">Landing page</p>
+                                    <div class="d-flex gap-2 justify-content-center">
+                                        <a href="https://pilotsurya.netlify.app/" target="_blank" class="btn btn-sm btn-primary">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-4">
+                            <span class="badge bg-primary me-2">HTML</span>
+                            <span class="badge bg-primary me-2">CSS</span>
+                            <span class="badge bg-primary me-2">JavaScript</span>
+                            <span class="badge bg-primary">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Projects -->
+            <div class="row g-4">
+                <!-- Money Tracker -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100">
+                        <div class="project-img-wrapper">
+                            <div class="project-placeholder">
+                                <i class="fas fa-coins"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://delightful-raindrop-e02a3d.netlify.app/" target="_blank" class="btn btn-light btn-sm me-2">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Money Tracker</h5>
+                            <p class="card-text text-secondary">A web application to track income and expenses, helping users manage their personal finances efficiently.</p>
+                            <div class="d-flex gap-2 flex-wrap">
+                                <span class="badge bg-success">HTML</span>
+                                <span class="badge bg-success">CSS</span>
+                                <span class="badge bg-success">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Task Manager and expense trac -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100">
+                        <div class="project-img-wrapper">
+                            <div class="project-placeholder">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://simpletaskie.netlify.app/" target="_blank" class="btn btn-light btn-sm me-2">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Simple Taskie</h5>
+                            <p class="card-text text-secondary">A task management application to organize daily tasks and boost productivity with an intuitive interface.</p>
+                            <div class="d-flex gap-2 flex-wrap">
+                                <span class="badge bg-info">HTML</span>
+                                <span class="badge bg-info">CSS</span>
+                                <span class="badge bg-info">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Agricultural Rover -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100">
+                        <div class="project-img-wrapper embedded-project">
+                            <div class="project-placeholder">
+                                <i class="fas fa-tractor"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="#" class="btn btn-light btn-sm">
+                                    <i class="fas fa-info-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Autonomous Smart Agricultural Rover</h5>
+                            <p class="card-text text-secondary">Autonomous rover using Arduino Mega and ESP32 for seed planting, watering, and soil monitoring with mobile app control.</p>
+                            <div class="d-flex gap-2 flex-wrap">
+                                <span class="badge bg-warning text-dark">Arduino</span>
+                                <span class="badge bg-warning text-dark">ESP32</span>
+                                <span class="badge bg-warning text-dark">IoT</span>
+                                <span class="badge bg-warning text-dark">Sensors</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blind Stick -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100">
+                        <div class="project-img-wrapper embedded-project">
+                            <div class="project-placeholder">
+                                <i class="fas fa-blind"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="#" class="btn btn-light btn-sm">
+                                    <i class="fas fa-info-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Smart Blind Stick</h5>
+                            <p class="card-text text-secondary">Electronic smart blind stick with ultrasonic sensors and vibration feedback for obstacle detection and safe navigation.</p>
+                            <div class="d-flex gap-2 flex-wrap">
+                                <span class="badge bg-danger">Arduino</span>
+                                <span class="badge bg-danger">Ultrasonic</span>
+                                <span class="badge bg-danger">Sensors</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Smart Parking -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100">
+                        <div class="project-img-wrapper embedded-project">
+                            <div class="project-placeholder">
+                                <i class="fas fa-parking"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="#" class="btn btn-light btn-sm">
+                                    <i class="fas fa-info-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Smart Car Parking System</h5>
+                            <p class="card-text text-secondary">Automated parking system using sensors and microcontroller to detect and display real-time parking space availability.</p>
+                            <div class="d-flex gap-2 flex-wrap">
+                                <span class="badge bg-primary">Arduino</span>
+                                <span class="badge bg-primary">Sensors</span>
+                                <span class="badge bg-primary">Display</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Expense Tracker -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100">
+                        <div class="project-img-wrapper">
+                            <div class="project-placeholder">
+                                <i class="fas fa-wallet"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="#" class="btn btn-light btn-sm">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Expense Tracker</h5>
+                            <p class="card-text text-secondary">Application to track and categorize expenses, providing insights into spending patterns and budget management.</p>
+                            <div class="d-flex gap-2 flex-wrap">
+                                <span class="badge bg-secondary">HTML</span>
+                                <span class="badge bg-secondary">CSS</span>
+                                <span class="badge bg-secondary">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-dark">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Get In Touch</h2>
+                <div class="title-line mx-auto"></div>
+                <p class="text-secondary">Let's work together!</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Contact Info -->
+                <div class="col-lg-5">
+                    <h3 class="mb-4">Let's Connect</h3>
+                    <p class="text-secondary mb-4">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                    
+                    <div class="contact-item mb-3 p-3 rounded">
+                        <i class="fas fa-envelope text-primary me-3"></i>
+                        <div class="d-inline-block">
+                            <h6 class="mb-1">Email</h6>
+                            <a href="mailto:mothishdeva@gmail.com" class="text-decoration-none">mothishdeva@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item mb-3 p-3 rounded">
+                        <i class="fas fa-phone text-primary me-3"></i>
+                        <div class="d-inline-block">
+                            <h6 class="mb-1">Phone</h6>
+                            <a href="tel:+919566704795" class="text-decoration-none">+91 95667 04795</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item mb-4 p-3 rounded">
+                        <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                        <div class="d-inline-block">
+                            <h6 class="mb-1">Location</h6>
+                            <p class="mb-0 text-secondary">India</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex gap-3">
+                        <a href="https://github.com/mothishkannan" target="_blank" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/mothish-kannan" target="_blank" class="social-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/mothishkannan" target="_blank" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="mailto:mothishdeva@gmail.com" class="social-icon">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form with Formspree -->
+                <div class="col-lg-7">
+                    <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="mb-3">
+                            <input type="text" class="form-control form-control-lg" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control form-control-lg" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control form-control-lg" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control form-control-lg" name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg w-100">
+                            <i class="fas fa-paper-plane me-2"></i>Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-black text-center">
+        <div class="container">
+            <p class="text-secondary mb-2">&copy; 2025 Mothish Kannan. All rights reserved.</p>
+            <p class="text-secondary mb-0">Designed & Built with <i class="fas fa-heart text-danger"></i> using HTML, CSS & Bootstrap</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
